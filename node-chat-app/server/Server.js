@@ -1,17 +1,27 @@
-const express=require("express")
-const app= express()
-const path = require("path")
-const publicPath= path.join(__dirname, "../public")
-const port = process.env.PORT || 3000
-console.log(__dirname + "/../public")
-app.use(express.static(publicPath))
-// app.get("/home/dhawal/WebstormProjects/WebSocket/node-chat-app/public/index.html",(req,res)=>{
-//  req.send()
-// })
+var path = require("path")
+var socketIO=require("socket.io")
+var express=require("express")
+var http= require("http")
+var port = process.env.PORT || 3000
+var publicPath= path.join(__dirname, "../public")
 
-app.listen(port,()=>{
- console.log('server is up');
+
+var app= express()
+
+
+var server=http.createServer(app)
+var io=socketIO(server)
+
+
+
+
+app.use(express.static(publicPath))
+
+
+server.listen(port,()=>{
+ console.log("connected to port ")
 })
+
 
 
 
