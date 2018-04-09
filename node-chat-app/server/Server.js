@@ -17,6 +17,27 @@ var io=socketIO(server)
 
 app.use(express.static(publicPath))
 
+io.on("connection",(socket) => {
+    console.log("new user connected")
+    socket.emit("newMessage",{
+        from:"vishalbhauu@example.com",
+        text:"wasssup",
+        createdAt: 123
+    })
+
+
+    socket.on("createMessage",(message)=>{
+        console.log("create email",message)
+
+
+    })
+
+
+    socket.on("disconnect",(socket)=>{
+        console.log("disconnected from the server")
+    })
+
+})
 
 server.listen(port,()=>{
  console.log("connected to port ")
@@ -25,4 +46,3 @@ server.listen(port,()=>{
 
 
 
-//console.log9
