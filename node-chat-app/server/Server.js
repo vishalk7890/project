@@ -4,7 +4,7 @@ var express=require("express")
 var http= require("http")
 var port = process.env.PORT || 3000
 var publicPath= path.join(__dirname, "../public")
-
+const {generateMessage}=require("/home/dhawal/WebstormProjects/WebSocket/node-chat-app/server/Utils/message")
 
 var app= express()
 
@@ -20,31 +20,21 @@ app.use(express.static(publicPath))
 io.on("connection",(socket) => {
     console.log("new user connected")
 
-    socket.emit("newMessage",{
-        from:"admin",
-        text:"welcome to chat app",
-        createdAt: new Date().getTime()
-    })
+    socket.emit("newMessage", generateMessage("admin","welcome to this chat app")
+    )
 
-    socket.broadcast.emit("newMessage",{
-        from:"admin",
-        text:"new user joined",
-        createdAt: new Date().getTime()
-    })
-    socket.on("createMessage",(message)=>{
+    socket.broadcast.emit("newMessage",generateMessage("admin","new user joined"))
+
+    socket.on("createMessage",(message,callback)=>{
         console.log("create email",message)
 
-        io.emit("newMessage",{
-            from:message.from,
-            text:message.text,
-            createdAt:new Date().getTime()
-        })
+        io.emit("newMessage",generateMessage(message.from,message.text))
         // socket.broadcast.emit("newMessage",{
         //     from:message.from,
         //     text:message.text,
         //     createdAt:new Date().getTime()
         // })
-
+        callback("this is from server ")
     })
 
 
