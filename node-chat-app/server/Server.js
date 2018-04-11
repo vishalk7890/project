@@ -1,5 +1,6 @@
 var path = require("path")
 const moment=require("moment")
+const {isRealString}=require("/home/dhawal/WebstormProjects/WebSocket/node-chat-app/server/Utils/validation")
 var socketIO=require("socket.io")
 var express=require("express")
 var http= require("http")
@@ -27,6 +28,12 @@ io.on("connection",(socket) => {
 
     socket.broadcast.emit("newMessage",generateMessage("admin","new user joined"))
 
+    socket.on("join",(params,callback)=>{
+        if(!isRealString(params.name)|| !isRealString(params.room)){
+            callback("name and room name are required")
+        }
+        callback()
+    })
     socket.on("createMessage",(message,callback)=>{
         console.log("create email",message)
 
