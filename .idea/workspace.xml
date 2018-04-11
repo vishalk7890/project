@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="041fec6a-b884-4d53-b179-8b52deba00a6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/node-chat-app/playground/timestamp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-chat-app/public/js/libs/moment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-chat-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/node-chat-app/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-chat-app/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-chat-app/public/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-chat-app/server/Server.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-chat-app/server/Server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-chat-app/server/Utils/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-chat-app/server/Utils/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/node-chat-app/server/Server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="576">
-              <caret line="32" column="72" lean-forward="true" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
+              <caret line="32" column="72" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -36,8 +30,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node-chat-app/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+            <state relative-caret-position="176">
+              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -51,16 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/moment/package.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node-chat-app/public/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            <state relative-caret-position="162">
+              <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -89,8 +78,8 @@
         <option value="$PROJECT_DIR$/node-chat-app/public/css/style.css" />
         <option value="$PROJECT_DIR$/node-chat-app/playground/timestamp.js" />
         <option value="$PROJECT_DIR$/node-chat-app/server/Server.js" />
-        <option value="$PROJECT_DIR$/node-chat-app/public/index.html" />
         <option value="$PROJECT_DIR$/node-chat-app/server/Utils/message.js" />
+        <option value="$PROJECT_DIR$/node-chat-app/public/index.html" />
         <option value="$PROJECT_DIR$/node-chat-app/public/js/index.js" />
       </list>
     </option>
@@ -294,7 +283,7 @@
       <workItem from="1523259280389" duration="7280000" />
       <workItem from="1523298527243" duration="11576000" />
       <workItem from="1523346235548" duration="2026000" />
-      <workItem from="1523354834791" duration="14504000" />
+      <workItem from="1523354834791" duration="18015000" />
     </task>
     <servers />
   </component>
@@ -331,7 +320,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55557000" />
+    <option name="totallyTimeSpent" value="59068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1431" y="-4" width="1375" height="904" extended-state="6" />
@@ -545,22 +534,15 @@
     <entry file="file://$PROJECT_DIR$/node-chat-app/public/js/libs/moment.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/moment/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/node-chat-app/server/Server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
-          <caret line="32" column="72" lean-forward="true" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
+          <caret line="32" column="72" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node-chat-app/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/node_modules/moment/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/node-chat-app/server/Utils/message.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -569,10 +551,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node-chat-app/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/node-chat-app/public/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="162">
+          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
         </state>
       </provider>
     </entry>

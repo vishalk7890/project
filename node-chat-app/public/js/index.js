@@ -1,5 +1,16 @@
 var socket= io();
-
+function scrollToBottom(){
+    let messages=$("#messages")
+    let newMessage=messages.children("li:last-child")
+    let scrollTop=messages.prop("scrollTop")
+    let clientHeight=messages.prop("clientHeight")
+    let scrollHeight=messages.prop("scrollHeight")
+    let newMessageHeight=newMessage.innerHeight()
+    let lastMessageHeight=newMessage.prev().innerHeight()
+    if(clientHeight + scrollTop + newMessageHeight + lastMessageHeight >= scrollHeight){
+        messages.scrollTop(scrollHeight)
+    }
+}
 socket.on("connect",function (){
     console.log("connected to server")
 
@@ -11,23 +22,40 @@ socket.on("disconnect",function(){
 })
 
 socket.on("newMessage",function (message) {
-var formattedTime=moment(message.createdAt).format("h:mm A")
-    console.log("new message",message)
-    var li=jQuery('<li></li>')
-    li.text(`${message.from} ${formattedTime}, ${message.text}`)
-
-    $("#messages").append(li)
+    var formattedTime=moment(message.createdAt).format("h:mm A")
+    let template= $("#message-template").html()
+    let html=Mustache.render(template,{
+        text:message.text,
+        from:message.from,
+        createdAt:formattedTime
+    })
+    $("#messages").append(html)
+    scrollToBottom()
+    //var formattedTime=moment(message.createdAt).format("h:mm A")
+//     console.log("new message",message)
+//     var li=jQuery('<li></li>')
+//     li.text(`${message.from} ${formattedTime}, ${message.text}`)
+//
+//     $("#messages").append(li)
 })
 
 
 socket.on("newLocationMessage",function (message) {
     var formattedTime=moment(message.createdAt).format("h:mm A")
-    var li=$("<li></li>")
-    var a =$('<a target="_blank">my current location </a>')
-    li.text(`${message.from} ${formattedTime}:`)
-    a.attr('href',message.url)
-    li.append(a)
-    $("#messages").append(li)
+    let template= $("#location-message-template").html()
+    let html= Mustache.render(template,{
+        from:message.from,
+        url:message.url,
+        createdAt:formattedTime
+    })
+    $("#messages").append(html)
+    scrollToBottom()
+    // var li=$("<li></li>")
+    // var a =$('<a target="_blank">my current location </a>')
+    // li.text(`${message.from} ${formattedTime}:`)
+    // a.attr('href',message.url)
+    // li.append(a)
+    // $("#messages").append(li)
 })
 
 
