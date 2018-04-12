@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="041fec6a-b884-4d53-b179-8b52deba00a6" name="Default" comment="new things added">
-      <change afterPath="$PROJECT_DIR$/node-chat-app/server/Utils/Users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-chat-app/server/Utils/user-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-chat-app/public/js/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-chat-app/public/js/chat.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-chat-app/server/Server.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-chat-app/server/Server.js" afterDir="false" />
     </list>
@@ -20,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Server.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node-chat-app/server/Server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="75" />
+            <state relative-caret-position="162">
+              <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -56,6 +53,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="chat.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node-chat-app/public/chat.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="message.test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node-chat-app/server/Utils/message.test.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chat.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chat.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node-chat-app/public/js/chat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state relative-caret-position="234">
+              <caret line="79" column="33" lean-forward="true" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -123,8 +129,8 @@
         <option value="$PROJECT_DIR$/node-chat-app/server/Utils/validation.js" />
         <option value="$PROJECT_DIR$/node-chat-app/server/Utils/Users.js" />
         <option value="$PROJECT_DIR$/node-chat-app/server/Utils/user-test.js" />
-        <option value="$PROJECT_DIR$/node-chat-app/server/Server.js" />
         <option value="$PROJECT_DIR$/node-chat-app/public/js/chat.js" />
+        <option value="$PROJECT_DIR$/node-chat-app/server/Server.js" />
       </list>
     </option>
   </component>
@@ -341,7 +347,7 @@
       <workItem from="1523298527243" duration="11576000" />
       <workItem from="1523346235548" duration="2026000" />
       <workItem from="1523354834791" duration="24014000" />
-      <workItem from="1523524813549" duration="12180000" />
+      <workItem from="1523524813549" duration="12820000" />
     </task>
     <task id="LOCAL-00001" summary="new things added">
       <created>1523557404581</created>
@@ -386,7 +392,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77247000" />
+    <option name="totallyTimeSpent" value="77887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1431" y="-4" width="1375" height="904" extended-state="6" />
@@ -665,13 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node-chat-app/public/chat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node-chat-app/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -714,17 +713,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node-chat-app/server/Server.js">
+    <entry file="file://$PROJECT_DIR$/node-chat-app/public/chat.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="75" />
+        <state relative-caret-position="399">
+          <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node-chat-app/public/js/chat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state relative-caret-position="234">
+          <caret line="79" column="33" lean-forward="true" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node-chat-app/server/Server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
         </state>
       </provider>
     </entry>
