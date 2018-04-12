@@ -23,17 +23,23 @@ app.use(express.static(publicPath))
 io.on("connection",(socket) => {
     console.log("new user connected")
 
-    socket.emit("newMessage", generateMessage("admin","welcome to this chat app")
-    )
 
-    socket.broadcast.emit("newMessage",generateMessage("admin","new user joined"))
 
     socket.on("join",(params,callback)=>{
         if(!isRealString(params.name)|| !isRealString(params.room)){
             callback("name and room name are required")
         }
+
+        socket.join(params.room)
+
+
+        socket.emit("newMessage", generateMessage("admin","welcome to this chat app"))
+
+
+        socket.broadcast.to(params.room).emit("newMessage",generateMessage("admin",`${params.name} has joined`))
         callback()
     })
+
     socket.on("createMessage",(message,callback)=>{
         console.log("create email",message)
 
